@@ -28,6 +28,8 @@ dependencies {
     implementation("org.apache.commons:commons-collections4:4.4")
     testImplementation(platform("org.junit:junit-bom:5.10.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testRuntimeOnly("com.h2database:h2")
 }
 
 tasks.test {

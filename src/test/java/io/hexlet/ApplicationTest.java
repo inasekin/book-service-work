@@ -1,12 +1,12 @@
 package io.hexlet;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
-
+@SpringBootTest(properties = {"spring.profiles.active=test"})
 class ApplicationTest {
     @Test
     void testMain() {
-        assertDoesNotThrow(() -> Application.main(new String[]{}));
+        Application.main(new String[] {});
     }
 }
